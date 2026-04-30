@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS-Photo Marquee Promo (1400x560)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1400px;
+      height: 560px;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .marquee {
+      width: 1400px;
+      height: 560px;
+      background: linear-gradient(105deg, #f5f5f7 0%, #f5f5f7 55%, #e8f0fe 55%, #d2e3fc 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 100px;
+      position: relative;
+    }
+    .content {
+      max-width: 580px;
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+    }
+    .logo-text {
+      font-size: 42px;
+      font-weight: 700;
+      color: #1d1d1f;
+      letter-spacing: -1px;
+    }
+    .tagline {
+      font-size: 22px;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    .features {
+      display: flex;
+      gap: 32px;
+    }
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .feature-dot {
+      width: 10px;
+      height: 10px;
+      background: #007aff;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .feature-text {
+      font-size: 15px;
+      color: #1d1d1f;
+      font-weight: 500;
+    }
+    .visual {
+      position: relative;
+      width: 500px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .map-card {
+      width: 420px;
+      height: 320px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #e5e5e7;
+    }
+    .map-header {
+      height: 48px;
+      background: white;
+      border-bottom: 1px solid #e5e5e7;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 8px;
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-red { background: #ff5f57; }
+    .dot-yellow { background: #febc2e; }
+    .dot-green { background: #28c840; }
+    .map-body {
+      height: 272px;
+      background: linear-gradient(180deg, #e8f4fd 0%, #d4e9f7 50%, #c5e3f5 100%);
+      position: relative;
+    }
+    .map-grid {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        linear-gradient(rgba(0,122,255,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,122,255,0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .map-pin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      width: 36px;
+      height: 54px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+    }
+    .coord-tag {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #007aff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      font-family: 'SF Mono', Monaco, monospace;
+    }
+    .badge-pro {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #007aff;
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee">
+    <div class="content">
+      <div class="logo-row">
+        <svg class="logo-icon" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#007aff" d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z"/>
+          <circle cx="12" cy="12" r="5" fill="white"/>
+        </svg>
+        <div class="logo-text">GPS-Photo</div>
+      </div>
+      <div class="tagline">Write GPS location data into your photos.<br>100% private. All processing happens locally.</div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-dot"></div>
+          <div class="feature-text">Map Picker</div>
+        </div>
+        <div class="feature">
+          <div class="feature-dot"></div>
+          <div class="feature-text">Batch Processing</div>
+        </div>
+        <div class="feature">
+          <div class="feature-dot"></div>
+          <div class="feature-text">EXIF GPS Metadata</div>
+        </div>
+      </div>
+    </div>
+    <div class="visual">
+      <div class="map-card">
+        <div class="badge-pro">Chrome Extension</div>
+        <div class="map-header">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+        </div>
+        <div class="map-body">
+          <div class="map-grid"></div>
+          <svg class="map-pin" viewBox="0 0 24 36" fill="none">
+            <path fill="#FF3B30" d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z"/>
+            <circle cx="12" cy="12" r="5" fill="white"/>
+          </svg>
+          <div class="coord-tag">39.9042°N, 116.4074°E</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

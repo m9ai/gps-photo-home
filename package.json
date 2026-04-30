@@ -5,20 +5,15 @@
   "scripts": {
     "build": "echo 'Static site, no build step needed'",
     "serve": "npx serve . -p 3000",
-    "deploy": "npm run build && echo 'Push to main branch to trigger GitHub Pages deployment'",
     "screenshot": "node scripts/screenshot.js",
-    "screenshot:all": "node scripts/screenshot.js --all"
+    "screenshot:all": "node scripts/screenshot.js --all",
+    "screenshot:gumroad": "node scripts/screenshot.js --gumroad",
+    "screenshot:promo": "node scripts/screenshot.js --promo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/gps-photo-homepage.git"
-  },
-  "homepage": "https://YOUR_USERNAME.github.io/gps-photo-homepage",
+  "homepage": "https://m9ai.work/gps-photo-home",
   "license": "MIT",
   "devDependencies": {
+    "playwright": "^1.59.1",
     "serve": "^14.2.0"
-  },
-  "dependencies": {
-    "playwright": "^1.59.1"
   }
 }

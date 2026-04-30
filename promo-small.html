@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS-Photo Small Promo Tile (440x280)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 440px;
+      height: 280px;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .tile {
+      width: 440px;
+      height: 280px;
+      background: linear-gradient(135deg, #007aff 0%, #0051d5 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+    }
+    .icon {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+    }
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .tagline {
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0.9;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+    .badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .coords {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      font-size: 11px;
+      font-family: 'SF Mono', Monaco, monospace;
+      opacity: 0.5;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tile">
+    <div class="badge">Chrome Extension</div>
+    <svg class="icon" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="white" d="M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z"/>
+      <circle cx="12" cy="12" r="5" fill="#007aff"/>
+    </svg>
+    <div class="title">GPS-Photo</div>
+    <div class="tagline">Write GPS into your photos</div>
+    <div class="coords">39.9042°N, 116.4074°E</div>
+  </div>
+</body>
+</html>
