@@ -56,4 +56,4 @@ Keep track of all your past edits. Quickly reuse previous GPS settings with a si
 
 ## Support
 
-For help or questions, visit our [Help Center](https://your-domain.github.io/gps-photo/help.html) or contact us through Gumroad.
+For help or questions, visit our [Help Center](https://m9ai.work/gps-photo-home/help) or contact us through Gumroad.
