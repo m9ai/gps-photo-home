@@ -1,0 +1,24 @@
+{
+  "name": "gps-photo-homepage",
+  "version": "1.0.0",
+  "description": "GPS-Photo Chrome Extension landing page",
+  "scripts": {
+    "build": "echo 'Static site, no build step needed'",
+    "serve": "npx serve . -p 3000",
+    "deploy": "npm run build && echo 'Push to main branch to trigger GitHub Pages deployment'",
+    "screenshot": "node scripts/screenshot.js",
+    "screenshot:all": "node scripts/screenshot.js --all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/gps-photo-homepage.git"
+  },
+  "homepage": "https://YOUR_USERNAME.github.io/gps-photo-homepage",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}
