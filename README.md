@@ -15,7 +15,7 @@ GPS-Photo is a Chrome extension that lets you add GPS metadata (latitude, longit
 
 ## Get GPS-Photo
 
-- [Get it on Chrome Web Store](https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID) *(coming soon)*
+- [Get it on Chrome Web Store](https://chromewebstore.google.com/detail/gps-photo/oagnlcpaodhnmjdmganimnngccdjdcfp) 
 
 ## Upgrade to Pro
 
